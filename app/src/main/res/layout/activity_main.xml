@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:reige="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.reige.switchview.MainActivity"
+    android:gravity="center">
+
+    <com.example.reige.switchview.view.SwitchView
+        android:id="@+id/switch_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        reige:button="@mipmap/switch_button"
+        reige:slider_background="@mipmap/slider_background"
+        reige:switch_background="@mipmap/switch_background"
+        reige:mask="@mipmap/bitmap_mask"
+        />
+</RelativeLayout>
