@@ -163,8 +163,12 @@ public class SwitchView extends View {
                     break;
                 }
                 float center = mSwitchBackground.getWidth() / 2.0f;
+                boolean oldState = mState;
                 mState = center > mCurrentX;
-                mOnStateChangeListener.onStateChange(mState);
+                if(oldState != mState){
+                    mOnStateChangeListener.onStateChange(mState);
+                }
+
                 break;
         }
         //重绘界面
