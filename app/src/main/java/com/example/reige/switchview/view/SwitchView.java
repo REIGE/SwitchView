@@ -54,6 +54,7 @@ public class SwitchView extends View {
         //遮罩
         int mask = attrs.getAttributeResourceValue(namespace, "mask", -1);
 
+
         setSwitchBackground(switch_background);
         setSliderBackground(slider_background);
         setButton(button);
